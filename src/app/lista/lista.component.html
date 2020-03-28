@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <button class="btn btn-primary" (click)="listar()">Listar Pokemons</button>
+    </div>
+
+    <table class="table mt-5 table-hover">
+        <thead>
+            <th>Nome</th>
+            <th>URL</th>
+        </thead>
+        <tbody>
+           <tr *ngFor="let pokemon of lista.results">
+               <td>
+                   {{pokemon.name}}
+               </td>
+               <td>
+                   {{pokemon.url}}
+               </td>
+           </tr>
+        </tbody>
+    </table>
+</div>
