@@ -7,18 +7,22 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ListaComponent } from './lista/lista.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ListaComponent,
-    HomeComponent
+    HomeComponent,
+    PesquisaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
